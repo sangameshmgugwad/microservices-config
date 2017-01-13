@@ -15,6 +15,10 @@ zuul:
       path: /commands/**
     product-query-side:
       path: /queries/**
+    account-command-side:
+      path: /commands/**
+    account-query-side:
+      path: /queries/**
   debug:
     request: true
     response: true
@@ -24,4 +28,4 @@ logging:
         root: INFO
         org.springframework: INFO
         com.netflix.niws.client.http: DEBUG
-        com.soagrowers: DEBUG
+        com.costbo: DEBUG

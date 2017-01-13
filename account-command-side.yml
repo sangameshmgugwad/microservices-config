@@ -1,0 +1,37 @@
+message: Greetings from the ACCOUNT-COMMAND-SIDE microservice [using the LOCALHOST config].
+
+#debug: true
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    preferIpAddress: true
+    
+spring:
+    application:
+        exchange: accounts.events.fanout.exchange
+        queue: accounts.default.queue
+        databaseName: account_events
+        eventsCollectionName: accounts_events
+        snapshotCollectionName: accounts_snapshots
+    rabbitmq:
+        hostname: localhost
+        username: test
+        password: password
+    data:
+        mongodb:
+            uri: mongodb://localhost:27017/accounts_cmd
+logging:
+    level:
+        root: INFO
+        org.springframework: INFO
+            #aop: DEBUG
+            #dao: DEBUG
+            #orm: DEBUG
+            #amqp: DEBUG
+            #data: DEBUG
+            #transaction: DEBUG
+        org.axonframework: INFO
+        com.costbo: INFO
+    file: ./build/logs/command-side-server.log
