@@ -1,4 +1,4 @@
-message: Greetings from the ACCOUNT-COMMAND-SIDE microservice [using the LOCALHOST config].
+message: Greetings from the CONTACT-COMMAND-SIDE microservice [using the LOCALHOST config].
 
 #debug: true
 eureka:
@@ -10,18 +10,18 @@ eureka:
     
 spring:
     application:
-        exchange: accounts.events.fanout.exchange
-        queue: accounts.default.queue
-        databaseName: account_events
-        eventsCollectionName: accounts_events
-        snapshotCollectionName: accounts_snapshots
+        exchange: contacts.events.fanout.exchange
+        queue: contacts.default.queue
+        databaseName: contact_events
+        eventsCollectionName: contacts_events
+        snapshotCollectionName: contacts_snapshots
     rabbitmq:
         hostname: localhost
         username: test
         password: password
     data:
         mongodb:
-            uri: mongodb://localhost:27017/accounts_cmd
+            uri: mongodb://localhost:27017/contacts_cmd
 logging:
     level:
         root: INFO
