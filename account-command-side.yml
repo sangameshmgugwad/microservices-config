@@ -22,16 +22,4 @@ spring:
     data:
         mongodb:
             uri: mongodb://localhost:27017/accounts_cmd
-logging:
-    level:
-        root: INFO
-        org.springframework: INFO
-            aop: DEBUG
-            dao: DEBUG
-            orm: DEBUG
-            amqp: DEBUG
-            data: DEBUG
-            transaction: DEBUG
-        org.axonframework: DEBUG
-        com.costbo: DEBUG
-    file: ./build/logs/command-side-server.log
+

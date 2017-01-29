@@ -19,16 +19,4 @@ spring:
     data:
         mongodb:
             uri: mongodb://mongodb:27017/accounts_qry
-logging:
-    level:
-        root: WARN
-        org.springframework: INFO
-            #aop: DEBUG
-            #dao: DEBUG
-            #orm: DEBUG
-            #amqp: DEBUG
-            #data: DEBUG
-            #transaction: DEBUG
-        org.axonframework: INFO
-        com.costbo: INFO
-    file: ./logs/query-side-server.log
+

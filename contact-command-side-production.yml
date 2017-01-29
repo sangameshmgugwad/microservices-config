@@ -10,8 +10,8 @@ eureka:
     
 spring:
     application:
-        exchange: contacts.events.fanout.exchange
-        queue: contacts.default.queue
+        exchange: accounts.events.fanout.exchange
+        queue: accounts.default.queue
         databaseName: contact_events
         eventsCollectionName: contacts_events
         snapshotCollectionName: contacts_snapshots
@@ -22,16 +22,4 @@ spring:
     data:
         mongodb:
             uri: mongodb://mongodb:27017/contacts_cmd
-logging:
-    level:
-        root: INFO
-        org.springframework: INFO
-            #aop: DEBUG
-            #dao: DEBUG
-            #orm: DEBUG
-            #amqp: DEBUG
-            #data: DEBUG
-            #transaction: DEBUG
-        org.axonframework: INFO
-        com.costbo: INFO
-    file: ./logs/command-side-server.log
+
