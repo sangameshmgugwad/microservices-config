@@ -10,11 +10,15 @@ eureka:
     preferIpAddress: true
 
 zuul:
-  routes:
-    product-command-side:
-      path: /commands/**
-    product-query-side:
-      path: /queries/**
+   routes:
+    account-command-side:
+      path: /accountcmd/**
+    account-query-side:
+      path: /accountqry/**
+    contact-command-side:
+      path: /contactcmd/**
+    contact-query-side:
+      path: /contactqry/**
   debug:
     request: true
     response: true
