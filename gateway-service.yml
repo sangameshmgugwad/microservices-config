@@ -12,9 +12,9 @@ eureka:
 zuul:
   routes:
     account-command-side:
-      path: /commands/**
+      path: /command/account/**
     account-query-side:
-      path: /queries/**
+      path: /query/account/**
   debug:
     request: true
     response: true
