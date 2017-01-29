@@ -1,5 +1,6 @@
 message: Greetings from the COSTBO-CONTACT-COMMAND-SIDE microservice [using the PRODUCTION config].
-
+server:
+  port: 7000
 #debug: true
 eureka:
   client:

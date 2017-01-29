@@ -1,5 +1,6 @@
 message: Greetings from the CONTACT-QUERY-SIDE microservice [using the LOCALHOST config].
-
+server:
+  port: 7001
 eureka:
   client:
     serviceUrl:

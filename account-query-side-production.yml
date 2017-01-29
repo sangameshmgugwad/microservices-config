@@ -1,5 +1,6 @@
 message: Greetings from the COSTBO-ACCOUNT-QUERY-SIDE microservice [using the PRODUCTION config].
-
+server:
+  port: 9001
 eureka:
   client:
     serviceUrl:

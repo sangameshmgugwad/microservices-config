@@ -1,5 +1,6 @@
 message: Greetings from the CONTACT-COMMAND-SIDE microservice [using the LOCALHOST config].
-
+server:
+  port: 7000
 #debug: true
 eureka:
   client:

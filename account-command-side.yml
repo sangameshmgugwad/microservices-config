@@ -1,5 +1,6 @@
 message: Greetings from the ACCOUNT-COMMAND-SIDE microservice [using the LOCALHOST config].
-
+server:
+  port: 9000
 #debug: true
 eureka:
   client:

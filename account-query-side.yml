@@ -1,5 +1,6 @@
 message: Greetings from the PRODUCT-QUERY-SIDE microservice [using the LOCALHOST config].
-
+server:
+  port: 9001
 eureka:
   client:
     serviceUrl:
