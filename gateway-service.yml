@@ -12,25 +12,20 @@ eureka:
 zuul:
   routes:
     account-command-side:
-      path: /accountcmd/**
+      path: /commands/**
     account-query-side:
-      path: /accountqry/**
+      path: /queries/**
     contact-command-side:
-      path: /contactcmd/**
+      path: /commands/**
     contact-query-side:
-      path: /contactqry/**
+      path: /queries/**
+  debug:
+    request: true
+    response: true
 
 logging:
     level:
         root: INFO
         org.springframework: INFO
         com.netflix.niws.client.http: DEBUG
-        com.costbo: DEBUG
-
-hystrix:
-  command:
-    default:
-      execution:
-        isolation:
-          thread:
-            timeoutInMilliseconds: 60000
+        com.soagrowers: DEBUG
