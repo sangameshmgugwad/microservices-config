@@ -10,7 +10,7 @@ eureka:
     preferIpAddress: true
 
 zuul:
-   routes:
+  routes:
     account-command-side:
       path: /accountcmd/**
     account-query-side:

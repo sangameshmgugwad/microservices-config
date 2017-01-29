@@ -10,7 +10,7 @@ eureka:
     preferIpAddress: true
 
 zuul:
-   routes:
+  routes:
     account-command-side:
       path: /accountcmd/**
     account-query-side:
@@ -20,13 +20,12 @@ zuul:
     contact-query-side:
       path: /contactqry/**
 
-
 logging:
     level:
         root: INFO
         org.springframework: INFO
         com.netflix.niws.client.http: DEBUG
-        com.soagrowers: DEBUG
+        com.costbo: DEBUG
 
 hystrix:
   command:
