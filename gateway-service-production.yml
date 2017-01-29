@@ -12,13 +12,13 @@ eureka:
 zuul:
   routes:
     account-command-side:
-      path: /commands/**
+      path: /accountcmd/**
     account-query-side:
-      path: /queries/**
+      path: /accountqry/**
     contact-command-side:
-      path: /commands/**
+      path: /contactcmd/**
     contact-query-side:
-      path: /queries/**
+      path: /contactqry/**
   debug:
     request: true
     response: true
