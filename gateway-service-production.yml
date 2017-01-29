@@ -19,9 +19,6 @@ zuul:
       path: /contactcmd/**
     contact-query-side:
       path: /contactqry/**
-  debug:
-    request: true
-    response: true
 
 logging:
     level:
