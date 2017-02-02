@@ -10,9 +10,9 @@ eureka:
     
 spring:
     application:
-        exchange: contacts.events.fanout.exchange
+        exchange: accounts.events.fanout.exchange
         queue: event.stream
-        terminal: contacts.axon.terminal
+        terminal: accounts.axon.terminal
     rabbitmq:
         hostname: localhost
         username: test
