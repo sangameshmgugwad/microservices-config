@@ -15,6 +15,12 @@ zuul:
       path: /command/account/**
     account-query-side:
       path: /query/account/**
+    contact-command-side:
+      path: /command/contact/**
+    contact-query-side:
+      path: /query/contact/**
+    lookup-service:
+      path: /lookup/**
   debug:
     request: true
     response: true

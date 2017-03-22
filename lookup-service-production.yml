@@ -1,0 +1,15 @@
+message: Greetings from the Lookup microservice [using the LOCALHOST config].
+server:
+  port: 9999
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://discovery:8761/eureka/
+  instance:
+    preferIpAddress: true
+    
+spring:
+    data:
+        mongodb:
+            uri: mongodb://mongodb:27017/lookups
+
