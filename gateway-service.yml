@@ -31,3 +31,12 @@ logging:
         org.springframework: INFO
         com.netflix.niws.client.http: DEBUG
         com.soagrowers: DEBUG
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 60000
+

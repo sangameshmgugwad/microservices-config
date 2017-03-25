@@ -11,8 +11,8 @@ eureka:
     
 spring:
     application:
-        exchange: accounts.events.fanout.exchange
-        queue: accounts.default.queue
+        exchange: costbo_events.fanout.exchange
+        queue: account_events.queue
         databaseName: account_events
         eventsCollectionName: accounts_events
         snapshotCollectionName: accounts_snapshots
