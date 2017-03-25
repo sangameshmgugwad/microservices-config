@@ -10,7 +10,7 @@ eureka:
     
 spring:
     application:
-        exchange: costbo_events.exchange
+        exchange: costbo_events.fanout.exchange
         queue: account_events.queue
         terminal: costbo.axon.terminal
     rabbitmq:
