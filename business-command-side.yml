@@ -1,0 +1,26 @@
+message: Greetings from the BUSINESS-COMMAND-SIDE microservice [using the LOCALHOST config].
+server:
+  port: 9100
+#debug: true
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    preferIpAddress: true
+    
+spring:
+    application:
+        exchange: costbo_events.fanout.exchange
+        queue: business_events.queue
+        databaseName: business_events
+        eventsCollectionName: business_events
+        snapshotCollectionName: business_snapshots
+    rabbitmq:
+        hostname: localhost
+        username: test
+        password: password
+    data:
+        mongodb:
+            uri: mongodb://localhost:27017/business_cmd
+

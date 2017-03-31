@@ -1,0 +1,23 @@
+message: Greetings from the COSTBO-BUSINESS-QUERY-SIDE microservice [using the PRODUCTION config].
+server:
+  port: 9101
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://discovery:8761/eureka/
+  instance:
+    preferIpAddress: true
+    
+spring:
+    application:
+        exchange: costbo_events.fanout.exchange
+        queue: business_events.queue
+        terminal: costbo.axon.terminal
+    rabbitmq:
+        hostname: rabbitmq
+        username: test
+        password: password
+    data:
+        mongodb:
+            uri: mongodb://mongodb:27017/business_qry
+
