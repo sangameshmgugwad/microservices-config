@@ -19,6 +19,10 @@ zuul:
       path: /command/contact/**
     contact-query-side:
       path: /query/contact/**
+    business-command-side:
+      path: /command/business/**
+    business-query-side:
+      path: /query/business/**
     lookup-service:
       path: /lookup/**
   debug:
